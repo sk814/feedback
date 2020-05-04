@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body {
+  overflow-x: hidden;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 100px;
+}
+
+.carousel-image-1 {
+  background: url('https://source.unsplash.com/1200x110/?background');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('https://source.unsplash.com/1200x105/?background');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('https://source.unsplash.com/1100x100/?empty');
+  background-size: cover;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+#page-header {
+  height: 200px;
+  background: url('');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+</style>
+<head>
+  {% load static %}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="icon" type="image/png"  href="https://5.imimg.com/data5/WN/BR/JS/SELLER-31613990/prezotech-logo-90x90.jpg">
+  <title>Prezotech Feedback</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+
+      <a href="" class="navbar-brand">
+        <img src="https://5.imimg.com/data5/WN/BR/JS/SELLER-31613990/prezotech-logo-90x90.jpg">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a href="https://www.prezotech.com/" class="nav-link" ><b>PreZotech</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/company/prezotech/" class="nav-link">  <i class="fab fa-linkedin-in" style="font-size:32px;"></i> </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/prezotech/" class="nav-link"><i class="fab fa-instagram" style="font-size:32px;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.youtube.com/channel/UCKwa5sBdl0_afSyGJTT4Nvg" class="nav-link"><i class="fab fa-youtube" style="font-size:32px;" ></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/Prezotech" class="nav-link"><i class="fab fa-facebook-f" style="font-size:27px;" ></i></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SHOWCASE SLIDER -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" bg-info>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption mb-10">
+              <a href="https://www.justdial.com/Delhi/Prezotech-Solutions-Pvt-Ltd-Near-Nexa-Maruti-Showroom-Ghazipur/011PXX11-XX11-171218141608-Q5M6_BZDET"
+                 class="btn btn-info btn-lg">Prezotech JustDial</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption  mb-10">
+              <a href="https://www.indiamart.com/prezotech/about-us.html" class="btn btn-info btn-lg">Prezotech IndiaMart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-10">
+              <a href="https://www.sulekha.com/prezotech-solutions-pvt-ltd-anand-vihar-delhi-contact-address" class="btn btn-info btn-lg">Prezotech Sulekha</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+
+<div class="container">
+{% block content %}{% endblock %}
+</div>
+
+
+  <!-- VIDEO PLAY -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/zOF8MVZLR5w" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See our few team member</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- TESTIMONIALS -->
+  <section id="testimonials" class="p-2 bg-dark text-white">
+    <div class="container">
+      <h3 class="text-center">Few of our projects</h3>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Few line about project
+                </p>
+                <footer class="blockquote-footer">Centra Park, Delhi
+                  <cite title="Company 1">AIMS</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Few line about project
+                </p>
+                <footer class="blockquote-footer">Kataria Label
+                  <cite title="Company 2">L&M Group</cite>
+                </footer>
+              </blockquote>
+            </div>
+             <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Few line about project
+                </p>
+                <footer class="blockquote-footer">Project Name
+                  <cite title="Company 2">Jp Group</cite>
+                </footer>
+              </blockquote>
+            </div>
+             <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  Few line about project
+                </p>
+                <footer class="blockquote-footer">Project Name
+                  <cite title="Company 2">Company name</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  2000 printers providers
+                </p>
+                <footer class="blockquote-footer">Tafta Printers
+                  <cite title="Company 3">Print India</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Prezotech Solution Private Limited</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 5000,
+      pause: 'hover'
+    });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
+       $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    });
+
+  </script>
+</body>
+
+</html>

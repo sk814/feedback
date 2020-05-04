@@ -1,1 +1,73 @@
-First Step is always hard
+{% extends "feedbackformapp/base.html" %}
+{% block content %}
+
+        <!-- FORM -->
+        <br>
+            <!-- TEXT FIELD GROUPS -->
+          <br>
+            <div class="form-group">
+                <label for="name">Company Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter company name">
+                <small class="form-text text-muted">If company name is not available put your name</small>
+            </div>
+
+           <!-- RANGE -->
+            <div class="form-group">
+                <label for="membership">Product Satisfaction</label>
+                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Product" id="Product"  oninput="ProductOutput.value = Product.value">
+                  <div class="input-group-append">
+                    <span class="input-group-range"> <output name="ProductOutput" id="ProductOutput">1</output></span>
+                  </div>
+            </div>
+          <div class="form-group">
+                <label for="membership">Service Satisfaction</label>
+                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="ServiceInputName" id="ServiceInputId"  oninput="ServiceOutputId.value = ServiceInputId.value">
+                  <div class="input-group-append">
+                    <span class="input-group-range"> <output name="ServiceOutputName" id="ServiceOutputId">1</output></span>
+                  </div>
+            </div>
+
+           <div class="form-group">
+                <label for="membership">Employee Behaviour</label>
+                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="EmployeeInputName" id="EmployeeInputId"  oninput="EmployeeOutputId.value = EmployeeInputId.value">
+                  <div class="input-group-append">
+                    <span class="input-group-range"> <output name="EmployeeOutputName" id="EmployeeOutputId">1</output></span>
+                  </div>
+            </div>
+
+          <div class="form-group">
+                <label for="membership">Value for money</label>
+                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="moneyInputName" id="moneyInputId"  oninput="moneyOutputId.value = moneyInputId.value">
+                  <div class="input-group-append">
+                    <span class="input-group-range"> <output name="moneyOutputName" id="moneyOutputId">1</output></span>
+                  </div>
+            </div>
+
+           <div class="form-group">
+                <label for="membership">Recommendable</label>
+                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="RecommendableInputName" id="RecommendableInputId"  oninput="RecommendableOutputId.value = RecommendableInputId.value">
+                  <div class="input-group-append">
+                    <span class="input-group-range"> <output name="RecommendableOutputName" id="RecommendableOutputId">1</output></span>
+                  </div>
+           <small class="form-text text-muted">Total: </small>
+           </div>
+
+
+
+            <!-- TEXTAREA -->
+            <div class="form-group">
+                <label for="message">Any review</label>
+                <textarea class="form-control" id="message" placeholder="Suggestion/Complain/Complement" rows="3"></textarea>
+            </div>
+
+
+
+            <br>
+
+            <button class="btn btn-primary btn-block" type="submit">Submit</button>
+        <br>
+
+        </form>
+
+
+{% endblock %}
