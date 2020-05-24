@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_k+h*-%0=ksn0wj8l#m@mqj8!u%90h-bh0-4!4&%*=35qm5-6c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['prezotech.in/feedback','127.0.0.1']
+ALLOWED_HOSTS = ['prezotech.in/feedback']
 
 
 # Application definition
