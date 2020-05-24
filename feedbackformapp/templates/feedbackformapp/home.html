@@ -1,6 +1,8 @@
 {% extends "feedbackformapp/base.html" %}
 {% block content %}
 
+
+
         <!-- FORM -->
         <form method="POST">
             {% csrf_token %}
@@ -17,42 +19,41 @@
            <!-- RANGE -->
             <div class="form-group">
                 <label for="membership">Product Satisfaction</label>
-                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Product" id="Product"  oninput="ProductOutput.value = Product.value">
+                <input class="custom-range " min="1" max="5" step="1" value="3" type="range" name="Product" id="Product"  oninput="ProductOutput.value = Product.value">
                   <div class="input-group-append">
-                    <span class="input-group-range"> <output name="ProductOutput" id="ProductOutput">1</output></span>
+                    <span class="input-group-range"> <output name="ProductOutput" id="ProductOutput">3</output></span>
                   </div>
             </div>
           <div class="form-group">
                 <label for="membership">Service Satisfaction</label>
-                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Service" id="Service"  oninput="ServiceOutputId.value = Service.value">
+                <input class="custom-range " min="1" max="5" step="1" value="3" type="range" name="Service" id="Service"  oninput="ServiceOutputId.value = Service.value">
                   <div class="input-group-append">
-                    <span class="input-group-range"> <output name="ServiceOutputName" id="ServiceOutputId">1</output></span>
+                    <span class="input-group-range"> <output name="ServiceOutputName" id="ServiceOutputId">3</output></span>
                   </div>
             </div>
 
            <div class="form-group">
                 <label for="membership">Employee Behaviour</label>
-                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Employee" id="Employee"  oninput="EmployeeOutputId.value = Employee.value">
+                <input class="custom-range " min="1" max="5" step="1" value="3" type="range" name="Employee" id="Employee"  oninput="EmployeeOutputId.value = Employee.value">
                   <div class="input-group-append">
-                    <span class="input-group-range"> <output name="EmployeeOutputName" id="EmployeeOutputId">1</output></span>
+                    <span class="input-group-range"> <output name="EmployeeOutputName" id="EmployeeOutputId">3</output></span>
                   </div>
             </div>
 
           <div class="form-group">
                 <label for="membership">Value for Money</label>
-                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Value" id="Value"  oninput="moneyOutputId.value = Value.value">
+                <input class="custom-range " min="1" max="5" step="1" value="3" type="range" name="Value" id="Value"  oninput="moneyOutputId.value = Value.value">
                   <div class="input-group-append">
-                    <span class="input-group-range"> <output name="moneyOutputName" id="moneyOutputId">1</output></span>
+                    <span class="input-group-range"> <output name="moneyOutputName" id="moneyOutputId">3</output></span>
                   </div>
             </div>
 
            <div class="form-group">
                 <label for="membership">Recommendable</label>
-                <input class="custom-range " min="1" max="100" step="1" value="1" type="range" name="Recommendable" id="Recommendable"  oninput="RecommendableOutputId.value = Recommendable.value">
+                <input class="custom-range " min="1" max="5" step="1" value="3" type="range" name="Recommendable" id="Recommendable"  oninput="RecommendableOutputId.value = Recommendable.value">
                   <div class="input-group-append">
-                    <span class="input-group-range"> <output name="RecommendableOutputName" id="RecommendableOutputId">1</output></span>
+                    <span class="input-group-range"> <output name="RecommendableOutputName" id="RecommendableOutputId">3</output></span>
                   </div>
-           <small class="form-text text-muted">Total: </small>
            </div>
 
             <!-- TEXTAREA -->

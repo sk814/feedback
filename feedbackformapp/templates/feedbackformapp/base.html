@@ -20,20 +20,7 @@
   height: 100px;
 }
 
-.carousel-image-1 {
-  background: url('https://source.unsplash.com/1200x110/?background');
-  background-size: cover;
-}
 
-.carousel-image-2 {
-  background: url('https://source.unsplash.com/1200x105/?background');
-  background-size: cover;
-}
-
-.carousel-image-3 {
-  background: url('https://source.unsplash.com/1100x100/?empty');
-  background-size: cover;
-}
 
 #home-heading {
   position: relative;
@@ -102,6 +89,14 @@
   color: #fff;
 }
 
+.carousel-indicators li {
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+    background-color: #ffff99;
+}
+
 </style>
 <head>
   {% load static %}
@@ -113,65 +108,78 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="icon" type="image/png"  href="https://5.imimg.com/data5/WN/BR/JS/SELLER-31613990/prezotech-logo-90x90.jpg">
+  <link rel="icon" type="image/png"  href="https://i.ibb.co/cCgZj2h/poster5-23-205140-1.png">
   <title>Prezotech Feedback</title>
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> -->
+    <nav  class="clearfix fixed-top navbar navbar-expand-sm navbar-light">
     <div class="container">
 
+      <!-- logo -->
       <a href="" class="navbar-brand">
-        <img src="https://5.imimg.com/data5/WN/BR/JS/SELLER-31613990/prezotech-logo-90x90.jpg">
+        <img src="https://i.ibb.co/LvHP1Ng/poster5-20-12359.png">
       </a>
+
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#b19cd9; font-size:28px;"></i></span>
+       </button>
+      <div class="collapse navbar-collapse " id="navbarCollapse">
+
 
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item active">
-            <a href="https://www.prezotech.com/" class="nav-link" ><b>PreZotech</b></a>
+          <li class="nav-item ml-auto active">
+            <a href="https://www.prezotech.com/" class="nav-link" >
+              <input type="image" src="https://i.ibb.co/kchdgsK/poster5-23-205140-1.png" />
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="https://www.linkedin.com/company/prezotech/" class="nav-link">  <i class="fab fa-linkedin-in" style="font-size:32px;"></i> </a>
+          <li class="nav-item ml-auto">
+            <a href="https://www.instagram.com/prezotech/" class="nav-link"><i class="fab fa-instagram" style="font-size:32px;color:red"></i></a>
           </li>
-          <li class="nav-item">
-            <a href="https://www.instagram.com/prezotech/" class="nav-link"><i class="fab fa-instagram" style="font-size:32px;"></i></a>
+          <li class="nav-item ml-auto">
+            <a href="https://www.youtube.com/channel/UCKwa5sBdl0_afSyGJTT4Nvg" class="nav-link"><i class="fab fa-youtube" style="font-size:32px;color:red" ></i></a>
           </li>
-          <li class="nav-item">
-            <a href="https://www.youtube.com/channel/UCKwa5sBdl0_afSyGJTT4Nvg" class="nav-link"><i class="fab fa-youtube" style="font-size:32px;" ></i></a>
+          <li class="nav-item ml-auto">
+            <a href="https://www.facebook.com/Prezotech" class="nav-link"><i class="fab fa-facebook-f" style="font-size:27px;color:blue" ></i></a>
           </li>
-          <li class="nav-item">
-            <a href="https://www.facebook.com/Prezotech" class="nav-link"><i class="fab fa-facebook-f" style="font-size:27px;" ></i></a>
+
+          <li class="nav-item ml-auto">
+            <a href="https://www.linkedin.com/company/prezotech/?originalSubdomain=in" class="nav-link"><i class="fa fa-linkedin" style="font-size:29px;color:blue" ></i></a>
           </li>
 
         </ul>
       </div>
+
     </div>
   </nav>
 
 
   <!-- SHOWCASE SLIDER -->
+
   <section id="showcase">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators" bg-info>
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="0"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
       </ol>
+<br>
       <div class="carousel-inner">
-        <div class="carousel-item carousel-image-1 active">
+
+        <div class="carousel-item">
           <div class="container">
             <div class="carousel-caption mb-10">
               <a href="https://www.justdial.com/Delhi/Prezotech-Solutions-Pvt-Ltd-Near-Nexa-Maruti-Showroom-Ghazipur/011PXX11-XX11-171218141608-Q5M6_BZDET"
@@ -180,7 +188,7 @@
           </div>
         </div>
 
-        <div class="carousel-item carousel-image-2">
+        <div class="carousel-item">
           <div class="container">
             <div class="carousel-caption  mb-10">
               <a href="https://www.indiamart.com/prezotech/about-us.html" class="btn btn-info btn-lg">Prezotech IndiaMart</a>
@@ -188,23 +196,17 @@
           </div>
         </div>
 
-        <div class="carousel-item carousel-image-3">
+        <div class="carousel-item active">
           <div class="container">
             <div class="carousel-caption mb-10">
-              <a href="https://www.sulekha.com/prezotech-solutions-pvt-ltd-anand-vihar-delhi-contact-address" class="btn btn-info btn-lg">Prezotech Sulekha</a>
+              <a href="https://www.google.com/maps/place/Prezotech+solutions+Pvt+LTD+(BARCODE+PRINTER+AND+LABEL+DEALER)/@28.6331909,77.3144844,17z/data=!4m8!1m2!2m1!1sprezotech+solutions+private+limited+google!3m4!1s0x0:0xf48810e6dac8ef9a!8m2!3d28.6331912!4d77.3166731" class="btn btn-info btn-lg">Find us on Map!</a>
             </div>
           </div>
         </div>
+
       </div>
-
-      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-
-      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
     </div>
+
   </section>
 
 
@@ -232,57 +234,53 @@
    <!-- TESTIMONIALS -->
   <section id="testimonials" class="p-2 bg-dark text-white">
     <div class="container">
-      <h3 class="text-center">Few of our projects</h3>
+      <h3 class="text-center">Few of our client</h3>
       <div class="row text-center">
         <div class="col">
           <div class="slider">
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Few line about project
+                  Minda Automative
                 </p>
-                <footer class="blockquote-footer">Centra Park, Delhi
-                  <cite title="Company 1">AIMS</cite>
+                <footer class="blockquote-footer">Manesar, Haryana
                 </footer>
               </blockquote>
             </div>
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Few line about project
+                  Amity University
                 </p>
-                <footer class="blockquote-footer">Kataria Label
-                  <cite title="Company 2">L&M Group</cite>
+                <footer class="blockquote-footer">Noida
                 </footer>
               </blockquote>
             </div>
              <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Few line about project
+                  Mahindra Logistics
                 </p>
-                <footer class="blockquote-footer">Project Name
-                  <cite title="Company 2">Jp Group</cite>
+                <footer class="blockquote-footer">Delhi
+
                 </footer>
               </blockquote>
             </div>
              <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Few line about project
+                  Godrej
                 </p>
-                <footer class="blockquote-footer">Project Name
-                  <cite title="Company 2">Company name</cite>
+                <footer class="blockquote-footer">India
                 </footer>
               </blockquote>
             </div>
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  2000 printers providers
+                  Panasonic
                 </p>
-                <footer class="blockquote-footer">Tafta Printers
-                  <cite title="Company 3">Print India</cite>
+                <footer class="blockquote-footer">India
                 </footer>
               </blockquote>
             </div>
@@ -333,12 +331,15 @@
 
   <script>
 
+
+
+
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
     // Configure Slider
     $('.carousel').carousel({
-      interval: 5000,
+      interval: 4500,
       pause: 'hover'
     });
 

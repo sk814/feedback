@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_k+h*-%0=ksn0wj8l#m@mqj8!u%90h-bh0-4!4&%*=35qm5-6c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['prezotech.in/feedback']
+ALLOWED_HOSTS = ['prezotech.in/feedback','127.0.0.1']
 
 
 # Application definition
@@ -77,13 +77,10 @@ WSGI_APPLICATION = 'feedbackform.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'forensic_medicon',
-        'USER': 'sunny',
-        'PASSWORD': 'PREZOTECH'
-        'HOST': 'prezotech.in/feedback',
-        'PORT': '5432',
+       'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 
 }
 
